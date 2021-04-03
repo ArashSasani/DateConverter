@@ -15,4 +15,4 @@ You can easily clone the project and reference it into your app or you can direc
 [Nuget Package Manager](https://www.nuget.org/packages).
 
 Link of the package:
-https://www.nuget.org/packages
+https://www.nuget.org/packages/Date_Converter/
