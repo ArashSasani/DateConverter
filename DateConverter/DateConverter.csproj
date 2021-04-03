@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Date_Converter</PackageId>
+    <Authors>Arash Sasani</Authors>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>

@@ -19,6 +19,9 @@ namespace DateConverter
         private static readonly PersianCalendar PC = new PersianCalendar();
         private static readonly GregorianCalendar GC = new GregorianCalendar();
 
+        /// <summary>
+        /// Converts Gregorian date to Shamsi(Persian)
+        /// </summary>
         public static string GregorianToPersian(this DateTime date, IncludeTime includeTime)
         {
             if (date < GC.MinSupportedDateTime)
@@ -59,6 +62,9 @@ namespace DateConverter
             return result;
         }
 
+        /// <summary>
+        /// Converts Gregorian date to Hijri(Arabic)
+        /// </summary>
         public static string GregorianToHijri(this DateTime date, IncludeTime includeTime)
         {
             if (date < GC.MinSupportedDateTime)
@@ -101,6 +107,10 @@ namespace DateConverter
             return result;
         }
 
+        /// <summary>
+        /// Converts Persian(Shamsi) date to Gregorian
+        /// </summary>
+        /// <param name="date">for date param please use the corrent format: "year/month/day-hour:minutes:second"</param>
         public static DateTime PersianToGregorian(this string date, IncludeTime includeTime)
         {
             if (string.IsNullOrEmpty(date))
@@ -156,6 +166,10 @@ namespace DateConverter
             return result;
         }
 
+        /// <summary>
+        /// Converts Hijri date to Gregorian
+        /// </summary>
+        /// <param name="date">for date param please use the corrent format: "year/month/day-hour:minutes:second"</param>
         public static DateTime HijriToGregorian(this string date, IncludeTime includeTime)
         {
             if (string.IsNullOrEmpty(date))
