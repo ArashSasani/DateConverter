@@ -2,7 +2,7 @@
 
 ## Table of Contents
 * [Info](#info)
-* [Setup](setup)
+* [Setup](#setup)
 
 ## Info
 This is a .Net standard 2.0 class library that you can reference into your .Net Framework or .Net Core app.
